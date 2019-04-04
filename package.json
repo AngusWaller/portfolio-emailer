@@ -1,0 +1,30 @@
+{
+  "name": "portfolio-emailer",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "dev": "nodemon --exec \"serverless offline start --skipCacheInvalidation\"",
+    "devHeavyLoad": "nodemon --exec \"serverless offline start --skipCacheInvalidation --dontPrintOutput\"",
+    "test/watch": "jest --watchAll",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^5.15.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0",
+    "eslint-plugin-jest": "^22.3.0",
+    "jest": "^24.1.0",
+    "serverless-aws-documentation": "^1.1.0",
+    "serverless-offline": "^4.7.1",
+    "dotenv": "^6.2.0"
+  },
+  "dependencies": {
+    "dynalite": "^2.2.0",
+    "dynamoose": "^1.7.2",
+    "moment": "^2.24.0"
+  }
+}
