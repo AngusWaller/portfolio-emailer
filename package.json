@@ -23,8 +23,11 @@
     "dotenv": "^6.2.0"
   },
   "dependencies": {
+    "@sendgrid/mail": "^6.3.1",
     "dynalite": "^2.2.0",
     "dynamoose": "^1.7.2",
-    "moment": "^2.24.0"
+    "lodash": "^4.17.11",
+    "moment": "^2.24.0",
+    "uuid": "^3.3.2"
   }
 }

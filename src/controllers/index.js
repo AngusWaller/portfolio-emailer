@@ -3,5 +3,5 @@ const admin = require('./admin');
 
 module.exports = {
   send,
-  admin,
+  // admin,
 };

@@ -1,7 +1,7 @@
 #Serverless Emailer
 
 This is a portfolio project to show how I would make a emailing serverless microservice in Node.js & AWS Lambda. 
-The context for this project is that a company wishes to send HTML emails to their users, in a way that is as efficient 
+The context for this project is that a theoretical company wishes to send HTML emails to their users, in a way that is as efficient 
 & cheap as possible. It was decided that server-less was ideal as it can handle large loads at any time as well as 
 having a nice clean framework Serverless.js.
 
@@ -23,6 +23,7 @@ Mongoose.
 version control may be hard to manage.
 * As all models & schemas are defined on this MS, any other MS servers outside of this project scope may encounter 
 A-symmetrical data. 
+* Babel was not used as while it does tidy up code somewhat with imports ect. It takes an amount of time of JITC that can be spent elsewhere. Also baseline node/es6 is fine. 
 
 ## Architecture
 BFF architecture was selected as it is relatively easy to work from a pseudo Consumer Driven Contract configuration where the route, payload,
@@ -31,6 +32,10 @@ BFF architecture was selected as it is relatively easy to work from a pseudo Con
 ## Performance
 
 ## Modularity
+
+## Conventions
+* AirBNB style linting
+* Snake-case for databasing
 
 ## Setup
 1. Clone this repo
