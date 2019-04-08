@@ -2,7 +2,7 @@ const sgMail = require('@sendgrid/mail');
 
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
-module.exports = ({
+const sendgrid = async ({
   to, from, subject, contents,
 }) => {
   const msg = {
@@ -11,5 +11,8 @@ module.exports = ({
     subject,
     html: contents,
   };
-  sgMail.send(msg);
+  // return sgMail.send(msg);
 };
+
+
+module.exports = sendgrid;

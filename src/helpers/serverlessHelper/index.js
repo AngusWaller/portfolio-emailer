@@ -1,12 +1,12 @@
-
+const uuid = require('uuid');
 // Opted for a constructor style class as that will allow us to have nested methods for respond.
 
-function helperFunction(event, context, callback) {
+function helperFunction(event, context) {
   this.start = new Date();
+  this.request_id = uuid.v4();
 
   this.event = event;
   this.context = context;
-  this.callback = callback;
 
   this.body = this.event.body ? JSON.parse(this.event.body) : null;
   this.query = this.event.query ? JSON.parse(this.event.query) : null;
