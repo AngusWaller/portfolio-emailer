@@ -1,5 +1,5 @@
-#Serverless Emailer
-
+# Serverless Emailer
+## This is a WIP project
 This is a portfolio project to show how I would make a emailing serverless microservice in Node.js & AWS Lambda. 
 The context for this project is that a theoretical company wishes to send HTML emails to their users, in a way that is as efficient 
 & cheap as possible. It was decided that server-less was ideal as it can handle large loads at any time as well as 
@@ -36,8 +36,3 @@ BFF architecture was selected as it is relatively easy to work from a pseudo Con
 ## Conventions
 * AirBNB style linting
 * Snake-case for databasing
-
-## Setup
-1. Clone this repo
-2. Create a .env file for local dev env variables  
-3. Ensure nodemon is installed OR just use serverless-offline, then 
